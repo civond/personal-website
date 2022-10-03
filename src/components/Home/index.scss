@@ -7,9 +7,32 @@
         transform:translateY(-50%);
         width:40%;
         max-height:90%;
+        min-width: 400px;
     }
-    .firstLine {
-        color: #8a73a1;
+    .firstline {
+        color: #7c52a5;
+        animation: fadeIn 0.8s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        opacity:0;
+    }
+    .secondline {
+        animation: fadeIn 0.8s;
+        animation-delay: 0.7s;
+        animation-fill-mode: forwards;
+        opacity:0;
+    }
+    .thirdline {
+        animation: fadeIn 0.8s;
+        animation-delay: 1.0s;
+        animation-fill-mode: forwards;
+        opacity:0;
+    }
+    .othertext {
+        animation: fadeIn 0.8s;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards;
+        opacity:0;
     }
     h1 {
         color: white;
@@ -35,10 +58,16 @@
             color: #ffd700;
             font-size: 18px;
             position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
-            animation: fadeIn 1s 1.7s backwards;
-            opacity: 0.6;
+            margin-top: -40px;
+            margin-left: 170px;
+            
+
+            animation: fadeIn 0.8s;
+            animation-delay: 1.5s;
+            animation-fill-mode: forwards;
+            opacity:0;
+            
+            opacity: 0;
           }
 
 
@@ -53,7 +82,7 @@
         font-weight: 400;
         font-family: sans-serif;
         letter-spacing: 3px;
-        animation: fadeIn 1s 1.0s backwards;
+        @animation: fadeIn 1s 1.0s backwards;
     }
 
     .flat-button {
@@ -75,4 +104,43 @@
           background: #685802;
           color: #333;
         }
-}}
+    }
+}
+
+.logo-container {
+    padding-left: 25%;
+    width:auto;
+    height: 100%;
+    top: 0;
+    padding-top: 15%;
+    margin-left: 20px;
+    position: absolute;
+    left:300px;
+    overflow: hidden;
+
+    animation: fadeIn 1s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+    opacity:0;
+  
+    img {
+      width: 400px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo-container {
+      position: relative;
+      margin: left;
+      display: flex;
+      text-align: left;
+      left:0;
+      padding-left: 0;
+      top: 350px;
+      padding-bottom: 20px;
+      width:400px;
+    }
+    img{
+      width: 400px;
+    }
+}
