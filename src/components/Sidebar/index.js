@@ -1,7 +1,7 @@
 import './index.scss'
 import { useState } from 'react'
 import Logo from '../../assets/images/otter.png'
-import LogoText from '../../assets/images/nametest3.png'
+import LogoText from '../../assets/images/name.png'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser, faEnvelope, faTerminal, faBrain, faClose, faBars} from '@fortawesome/free-solid-svg-icons'

@@ -1,13 +1,11 @@
 .home-page {
-    padding-left:20%;
     .text-zone {
         position: absolute;
-        left:10%;
+        left:100px;
         top:50%;
         transform:translateY(-50%);
-        width:40%;
-        max-height:90%;
-        min-width: 400px;
+        width:400px;
+        min-width: 500px;
     }
     .firstline {
         color: #7c52a5;
@@ -49,7 +47,10 @@
             position: absolute;
             margin-top: -40px;
             left: -15px;
-            opacity: 0.6;
+            animation: fadeIn 0.8s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+            opacity: 0;
           }
       
           &:after {
@@ -60,14 +61,10 @@
             position: absolute;
             margin-top: -40px;
             margin-left: 170px;
-            
-
             animation: fadeIn 0.8s;
             animation-delay: 1.5s;
             animation-fill-mode: forwards;
             opacity:0;
-            
-            opacity: 0;
           }
 
 
@@ -112,7 +109,7 @@
     width:auto;
     height: 100%;
     top: 0;
-    padding-top: 15%;
+    margin-top: 15%;
     margin-left: 20px;
     position: absolute;
     left:300px;
@@ -129,14 +126,27 @@
 }
 
 @media screen and (max-width: 1200px) {
+.home-page {
+    .text-zone {
+        position: absolute;
+        top:10px;
+        left:0px;
+        @background-color: red;
+        width:300px;
+        height:300px;
+        margin-top:350px;
+        margin-left: 40px;
+        min-width: 500px;
+    }
+    }
+
     .logo-container {
       position: relative;
-      margin: left;
       display: flex;
       text-align: left;
       left:0;
+      margin-top: 350px;
       padding-left: 0;
-      top: 350px;
       padding-bottom: 20px;
       width:400px;
     }

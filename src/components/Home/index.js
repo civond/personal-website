@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Home = () => {
     return (
         <>
-            <div className='container home-page'>
+            <div className='home-page'>
                 <div className='text-zone'>
                     <h1><div className='firstline'>Hello/你好/こんにちは!</div>
                     <div className='secondline'>My name is</div>
