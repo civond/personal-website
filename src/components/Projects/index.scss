@@ -1,13 +1,11 @@
 .project-page {
-  overflow-y: scroll;
+  height:100%;
   .text-zone {
     margin-left:150px;
     position: absolute;
-    padding:5px;
+    @padding:5px;
     margin-top:80px;
-    width:70%;
-    max-width: 550px;
-    min-width:350px;
+    width:700px;
     font-family: 'Helvetica';
     font-size: 18px;
     
@@ -82,10 +80,7 @@ h1 {
   .project-page {
     .text-zone {
       margin-left: 0px;
-      width:550px;
-      max-width: 550px;
-      min-width: 550px;
-      max-height:90%;
+      width:400px;
     }
   }
 }

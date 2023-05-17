@@ -5,7 +5,7 @@ const Skills = () => {
         <>
         <div className='wrapper'>
             <div className='pub-container'>
-                <h2>Publications</h2><hr/>
+            <h2>Publications</h2><hr/>
                 <ol>
                     <li>
                         <a target = "_blank" rel="noreferrer" href="https://elifesciences.org/articles/58523">
@@ -21,6 +21,7 @@ const Skills = () => {
                     <ul>
                         <li>Python</li>
                         <li>MATLAB</li>
+                        <li>C++</li>
                         <li>SQL</li>
                         <li>JavaScript</li>
                         <li>R</li>
@@ -31,10 +32,11 @@ const Skills = () => {
             <h2>Tools</h2>
             <hr/>
                 <ul>
+                    <li>Simulink</li>
+                    <li>Anaconda</li>
                     <li>AutoCAD</li>
                     <li>Git</li>
                     <li>Docker</li>
-                    <li>Anaconda</li>
                     <li>MongoDB</li>
                 </ul>
         </div>

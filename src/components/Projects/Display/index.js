@@ -47,7 +47,6 @@ const Display = () => {
                     );   
                 })}
             </div>
-            <br/>
             
             <div className='project-display'>
                 
@@ -55,9 +54,9 @@ const Display = () => {
                     {Displaydata[tabIndex].name} <FontAwesomeIcon icon={faLink}/>
                     </a>
                 </h2> 
-                <div className='display-text'>
+                <div >
                     {Displaydata[tabIndex].content}
-                </div>
+                </div> <br/>
                 <div className='img-container'>
                     <img src={Displaydata[tabIndex].image} alt='proj_image'/>
                 </div>

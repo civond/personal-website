@@ -27,9 +27,6 @@ const Sidebar = () => {
             <NavLink exact="true" className="project-link" activeclassname="active" to="/projects" onClick={() => setShowNav(false)}>
                 <FontAwesomeIcon icon={faTerminal} color="#4d4d4e" />
             </NavLink>
-            <NavLink exact="true" className="contact-link"activeclassname="active" to="/contact" onClick={() => setShowNav(false)}>
-                <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-            </NavLink>
 
             <FontAwesomeIcon 
                 onClick={() => setShowNav(false)}
@@ -42,11 +39,6 @@ const Sidebar = () => {
 
         <div className='bottom-icons'>
             <ul>
-                <li>
-                    <a target = "_blank" rel="noreferrer" href="http://www.cn3laboratory.org/">
-                        <FontAwesomeIcon icon={faBrain} color="#4d4d4e" />
-                    </a>
-                </li>
                 <li>
                     <a target = "_blank" rel="noreferrer" href="https://www.linkedin.com/in/d-yeh/">
                         <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />

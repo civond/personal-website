@@ -1,19 +1,19 @@
 .wrapper{
     font-family: 'Helvetica';
-    margin-left: 15%;
-    margin-top: 580px;
+    margin-left: 160px;
+    margin-top: 720px;
     padding:5px;
     animation: fadeIn 1s;
     animation-delay: 2.0s;
     animation-fill-mode: forwards;
     opacity:0;
-    @width:500px;
     
     .pub-container {
         margin-top: 0px;
         font-size: 18px;
         width:450px;
         height: 120px;
+        
         .button-wrapper {
             padding: 1px;
             border-radius: 12px;
@@ -48,13 +48,12 @@
     }
     
     .skill-container {
-        margin-top: -20px;
+        margin-top: 0px;
         width: 150px;
         height:250px;
         font-size: 18px;
         display: inline-block;
         position: relative;
-        overflow: show;
         padding:2px;
         padding-bottom: 10px;
         float:left;
@@ -77,30 +76,34 @@
 
 @media screen and (max-width: 1200px) and (min-width: 450px) {
     .wrapper {
-        margin-top: 180px;
+        margin-top: 770px;
         margin-left: 50px;
         padding:0;
+
+        .pub-container {
+            font-size: 15px;
+            width:400px;
+        }
     }
-    .pub-container {
-        font-size: 15px;
-        width:300px;
-    }
-    .skill-container {
-        font-size: 15px;
-    }
+
 }
 
 @media screen and (max-width: 450px) {
     .wrapper {
-        margin-top: 180px;
+        margin-top: 190px;
         margin-left: 0px;
         padding:0;
+
+        .pub-container {
+            font-size: 13px;
+            width:330px;
+        }
+
+        .skill-container {
+            margin-top: 10px;
+            font-size: 15px;
+            height:150px;
+        }
     }
-    .pub-container {
-        font-size: 15px;
-        width:100px;
-    }
-    .skill-container {
-        font-size: 15px;
-    }
+    
 }

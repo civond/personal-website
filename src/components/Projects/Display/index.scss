@@ -1,6 +1,7 @@
 .project-text {
     position: absolute;
     font-family: 'Helvetica';
+    padding-bottom:20px;
 
     li {
       list-style: none;
@@ -50,13 +51,18 @@
 
   .project-display {
     font-family: "Helvetica";
-    margin-top: 20px;
+    margin-top: 80px;
     position: absolute;
-    width:650px;
-    height:580px;
+    display: inline-block;
     background-color: rgb(127, 127, 206);
-    padding:5px;
-    padding-left: 8px;
+
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    width:600px;
+
     border-color: black;
     border-radius: 12px;
     border:1px solid;
@@ -91,10 +97,7 @@
         padding-right: 10px;
     }
     .img-container {
-        width:400px;
-        height:500px;
-        margin-top: 15px;
-        margin-left: 75px;
+        text-align: center;
     }
     img {
         width:500px;
@@ -108,14 +111,14 @@
     max-width: 450px;
   }
   .project-display {
-    position: relative;
-    margin-top: 55px;
+    position: absolute;
+    display: inline-block;
+    margin-top: 110px;
     width:450px;
-    height:580px;
 
     .img-container {
       width:400px;
-      height:500px;
+      height:350px;
       margin-top: 15px;
       margin-left: 25px;
   }
@@ -130,25 +133,24 @@
 
 @media screen and (max-width: 450px) {
   .project-text {
-    max-width: 450px;
+    max-width: 380px;
     font-size: 15px;
   }
   .project-display {
-    position: relative;
-    margin-top: 55px;
-    width:450px;
-    height:580px;
+    position: absolute;
+    display: inline-block;
+    margin-top: 100px;
+    width:300px;
 
     .img-container {
-      width:400px;
-      height:500px;
+      width:300px;
       margin-top: 15px;
-      margin-left: 25px;
+      margin-left: 15px;
   }
   
 
     img {
-      width:400px;
+      width:300px;
   }
 
   }
