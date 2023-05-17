@@ -3,6 +3,7 @@ import { Displaydata } from './Displaydata'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { act } from 'react-dom/test-utils'
 
 const Display = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -11,38 +12,40 @@ const Display = () => {
 
     })
 
+    var activeIndex = appState.activeObject.index;
+
     function toggleActive(index) {
         changeState({...appState, activeObject: {index}})
+        console.log('changed usestate')
     }
-    console.log('active id')
-    console.log(appState.activeObject)
+
+
+    function toggleActiveStyles(item,index) {
+    
+        if (item === activeIndex) {
+            console.log('index same: ', item)
+            return "active-button-wrapper"
+        } else {
+            console.log('index different: ', item)
+            return "button-wrapper"
+        }
+    }
 
     return (
-        
         <>
             <div className='project-text'>
+                
                 {Displaydata.map((item, index) => {
-                    console.log('the item id')
-                    console.log(item.id)
-
-                    function toggleActiveStyles(index) {
-                        if (item.id === appState.activeObject) {
-                            return "active-button-wrapper"
-                            
-                        } else {
-                            return "button-wrapper"
-                        }
-                    }
 
                     return (
                         <>
-
-                            <li className={toggleActiveStyles(index)}>
+                            
                                 <div 
-                                onClick={() => {setTabIndex(index);toggleActive(index)}}>
-                                    {item.name}            
+                                    className={toggleActiveStyles(index)}
+                                    onClick={() => {setTabIndex(index);toggleActive(index);}}>
+                                        {item.name}    
                                 </div>
-                            </li>             
+                                       
                         </>
                     );   
                 })}
@@ -54,7 +57,7 @@ const Display = () => {
                     {Displaydata[tabIndex].name} <FontAwesomeIcon icon={faLink}/>
                     </a>
                 </h2> 
-                <div >
+                <div>
                     {Displaydata[tabIndex].content}
                 </div> <br/>
                 <div className='img-container'>

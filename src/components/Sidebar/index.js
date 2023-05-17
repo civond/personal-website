@@ -4,7 +4,7 @@ import Logo from '../../assets/images/otter.png'
 import LogoText from '../../assets/images/name.png'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faTerminal, faBrain, faClose, faBars} from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faTerminal, faClose, faBars} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
