@@ -5,9 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faNoteSticky } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
-
-
-
 const About = () => {
     return (
         <>
@@ -47,7 +44,7 @@ const About = () => {
             
             <div className='image-container'>
                 <img src={Personalpic} alt='profile-pic'/>
-            
+        
                 <div className='links-list'>
                     <h2>Links</h2>
                     <ul>

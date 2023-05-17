@@ -107,7 +107,7 @@
         text-align: center;
     }
     img {
-        width:500px;
+        width:600px;
         
     }
   }
@@ -123,13 +123,16 @@
     margin-top: 110px;
     width:450px;
 
-    .img-container {
-      width:400px;
-      height:350px;
-      margin-top: 15px;
-      margin-left: 25px;
-  }
+    padding-top: 5px;
+    padding-bottom: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
   
+
+    .img-container {
+      text-align: center;
+      margin-top: 10px;
+  }
 
     img {
       width:400px;
@@ -154,7 +157,6 @@
     font-size: 15px;
 
     .img-container {
-      width:300px;
       text-align: center;
   }
   

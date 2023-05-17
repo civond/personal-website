@@ -3,6 +3,7 @@ import Display from './Display'
 
 const Projects = () => {
     return (
+        <>
         <div className='container project-page'>
             <div className='text-zone'>
                 <div className='header-animation'>
@@ -11,12 +12,13 @@ const Projects = () => {
                     </h1>
                 </div>
             
-                <div className='project-container'>
-                    <Display/>
+                
                     
-                </div>
+                    <Display/>
+               
             </div>
         </div>
+        </>
     )
 }
 

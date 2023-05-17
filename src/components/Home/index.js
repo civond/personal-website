@@ -8,16 +8,23 @@ const Home = () => {
         <>
             <div className='home-page'>
                 <div className='text-zone'>
-                    <h1><div className='firstline'>Hello/你好/こんにちは!</div>
-                    <div className='secondline'>My name is</div>
-                        
-                        <div className='thirdline'>Dorian!
+                    <h1>
+                        <div className='firstline'>
+                            Hello/你好/こんにちは!
                         </div>
-                        
+                        <div className='secondline'>
+                            My name is
+                        </div>
+                        <div className='thirdline'>
+                            Dorian!
+                        </div> 
                     </h1>
-                    <div className='othertext'>
-                        <h2>Graduate student @ New York University</h2>
-                        <Link to="/contact" className='flat-button'>
+                    <div className='educationtext'>
+                        <h2>
+                            M.S. Biomedical Engineering, New York University<br/>
+                            B.S. Biology, Psychology, University of Oregon
+                        </h2>
+                        <Link to="https://drive.google.com/file/d/1V7hdxioVEoq7ynB5oJ1-LiaqZEjQjL4Y/view?usp=share_link" className='flat-button'>
                             CONTACT ME
                         </Link>
                     </div>

@@ -32,9 +32,7 @@
             font-size: 18px;
             width: 95%;
             height: 100%;
-            @display: flex;
             align-items: center;
-            @padding: 0 16px;
             border-radius: 4px;
             
           }
@@ -53,7 +51,6 @@
         height:250px;
         font-size: 18px;
         display: inline-block;
-        position: relative;
         padding:2px;
         padding-bottom: 10px;
         float:left;
@@ -72,17 +69,20 @@
     
 }
 
-
-
 @media screen and (max-width: 1200px) and (min-width: 450px) {
     .wrapper {
-        margin-top: 770px;
+        margin-top: 500px;
         margin-left: 50px;
-        padding:0;
+        @padding-bottom: 20px;
 
         .pub-container {
             font-size: 15px;
             width:400px;
+            margin-top:-50px;
+            margin-left: -50px;
+        }
+        .skill-container {
+            margin-left: -50px;
         }
     }
 
@@ -90,19 +90,21 @@
 
 @media screen and (max-width: 450px) {
     .wrapper {
-        margin-top: 190px;
+        margin-top: 500px;
         margin-left: 0px;
         padding:0;
 
         .pub-container {
             font-size: 13px;
             width:330px;
+            margin-top: -60px;
         }
 
         .skill-container {
             margin-top: 10px;
             font-size: 15px;
             height:150px;
+
         }
     }
     
