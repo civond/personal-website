@@ -1,7 +1,6 @@
 import './index.scss'
 import Logo from '../../assets/images/otter.png'
-
-import { Link } from 'react-router-dom'
+import Text from '../../assets/text/Text.json'
 
 const Home = () => {
     return (
@@ -10,23 +9,25 @@ const Home = () => {
                 <div className='text-zone'>
                     <h1>
                         <div className='firstline'>
-                            Hello/你好/こんにちは!
+                            {Text['Home']['Home_Header1']}
                         </div>
                         <div className='secondline'>
-                            My name is
+                            {Text['Home']['Home_Header2']}
                         </div>
                         <div className='thirdline'>
-                            Dorian!
+                            {Text['Home']['Home_Header3']}
                         </div> 
                     </h1>
                     <div className='educationtext'>
                         <h2>
-                            M.S. Biomedical Engineering, New York University<br/>
-                            B.S. Biology, Psychology, University of Oregon
+                            {Text['Home']['Home_Education1']}<br/>
+                            {Text['Home']['Home_Education2']}
                         </h2>
-                        <Link to="https://drive.google.com/file/d/1V7hdxioVEoq7ynB5oJ1-LiaqZEjQjL4Y/view?usp=share_link" className='flat-button'>
-                            CONTACT ME
-                        </Link>
+
+                        <a href= {Text['Links']['CV']} className='flat-button' 
+                        target="_blank" rel="noopener noreferrer">
+                            {Text['Home']['Home_Button']}
+                        </a>
                     </div>
                 </div>
             </div>

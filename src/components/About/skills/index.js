@@ -20,9 +20,9 @@ const Skills = () => {
                 <hr/>
                     <ul>
                         <li>Python</li>
+                        <li>C / C++</li>
+                        <li>Assembly</li>
                         <li>MATLAB</li>
-                        <li>C++</li>
-                        <li>SQL</li>
                         <li>JavaScript</li>
                         <li>R</li>
                     </ul>        
@@ -32,12 +32,12 @@ const Skills = () => {
             <h2>Tools</h2>
             <hr/>
                 <ul>
-                    <li>Simulink</li>
                     <li>Anaconda</li>
-                    <li>AutoCAD</li>
+                    <li>MongoDB</li>
+                    <li>Simulink</li>
                     <li>Git</li>
                     <li>Docker</li>
-                    <li>MongoDB</li>
+                    <li>AutoCAD</li>
                 </ul>
         </div>
         <div className='skill-container'>
@@ -45,6 +45,7 @@ const Skills = () => {
         <hr/>
             <ul>
                 <li>DeepLabCut</li>
+                <li>TweetyNet</li>
                 <li>Google CoLabs</li>
                 <li>AWS</li>
             </ul>

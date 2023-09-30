@@ -1,9 +1,10 @@
 import './index.scss'
+import Text from '../../../assets/text/Text.json'
 import { Displaydata } from './Displaydata'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
-import { act } from 'react-dom/test-utils'
+// import { act } from 'react-dom/test-utils'
 
 const Display = () => {
     const [tabIndex, setTabIndex] = useState(0);

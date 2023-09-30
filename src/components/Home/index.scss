@@ -28,6 +28,7 @@
             position: absolute;
             margin-top: 80px;
             margin-left: -200px;
+            padding-bottom: 20px;
             color: #5a3f75;
             opacity: 0.6;
             position: absolute;
@@ -144,6 +145,10 @@
   
     img {
       width: 375px;
+      border-color: black;
+      border-radius: 50%;
+      border:1px solid;
+
     }
 }
 
@@ -159,7 +164,7 @@
 
         &:after {
             
-            margin-top: 470px;
+            margin-top: 500px;
             margin-left: -200px;
           }
     }
@@ -199,6 +204,15 @@
             width:300px; 
             margin-top:200px;
             margin-left: 10px;
+            &:before {
+            
+              margin-top: -50px;
+              margin-left: 0px;
+            }
+            &:after {
+              margin-top: 500px;
+              margin-left: -165px;
+            }
         }
 
         .educationtext {
@@ -211,7 +225,7 @@
           position: absolute;
           display: inline-block;
           text-align: center;
-          margin-top: 480px;
+          margin-top: 510px;
           margin-left: 10px;
 
           img {

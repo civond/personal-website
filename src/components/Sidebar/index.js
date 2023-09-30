@@ -4,8 +4,10 @@ import Logo from '../../assets/images/otter.png'
 import LogoText from '../../assets/images/name.png'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faTerminal, faClose, faBars} from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faTerminal, faClose, faBars, faCrow} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+
+import Text from '../../assets/text/Text.json'
 
 const Sidebar = () => {
     const [showNav, setShowNav] = useState(false);
@@ -40,13 +42,18 @@ const Sidebar = () => {
         <div className='bottom-icons'>
             <ul>
                 <li>
-                    <a target = "_blank" rel="noreferrer" href="https://www.linkedin.com/in/d-yeh/">
-                        <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                    <a target = "_blank" rel="noreferrer" href= {Text['Links']['Lab']}>
+                        <FontAwesomeIcon icon={faCrow} color= {Text['Links']['color']}/>
                     </a>
                 </li>
                 <li>
-                    <a target = "_blank" rel="noreferrer" href="https://github.com/civond">
-                        <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                    <a target = "_blank" rel="noreferrer" href= {Text['Links']['LinkedIn']}>
+                        <FontAwesomeIcon icon={faLinkedin} color= {Text['Links']['color']} />
+                    </a>
+                </li>
+                <li>
+                    <a target = "_blank" rel="noreferrer" href= {Text['Links']['GitHub']}>
+                        <FontAwesomeIcon icon={faGithub} color= {Text['Links']['color']} />
                     </a>
                 </li>
             </ul>
